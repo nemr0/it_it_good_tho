@@ -1,6 +1,6 @@
 import '../../domain/entity/movie.dart';
 
-abstract class BaseDataSource {
+abstract class BaseMovieDataSource {
   Future<List<Movie>> getTopRatedMovies();
 
   Future<List<Movie>> getPopularMovies();

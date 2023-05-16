@@ -4,7 +4,7 @@ import 'package:is_it_good_tho/Movies/domain/repo/base_movie_repo.dart';
 
 class MovieRepo implements BaseMovieRepo {
   const MovieRepo(this.dataSource);
-  final BaseDataSource dataSource;
+  final BaseMovieDataSource dataSource;
   @override
   Future<List<Movie>> getNowPlayingMovies() async =>
       dataSource.getNowPlayingMovies();

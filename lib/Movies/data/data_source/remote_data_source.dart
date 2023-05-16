@@ -6,7 +6,7 @@ import 'package:is_it_good_tho/Movies/data/data_source/base_data_source.dart';
 import 'package:is_it_good_tho/Movies/data/model/movie_model.dart';
 import 'package:is_it_good_tho/Movies/domain/entity/movie.dart';
 
-class RemoteDataSource extends BaseDataSource {
+class MovieRemoteDataSource extends BaseMovieDataSource {
   final Dio _dio = Dio();
   @override
   Future<List<Movie>> getNowPlayingMovies() async {

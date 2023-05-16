@@ -1,0 +1,3 @@
+class ServiceLocator {
+  void setup() {}
+}
